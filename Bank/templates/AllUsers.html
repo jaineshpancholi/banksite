@@ -1,0 +1,23 @@
+{% extends 'Nav_Footer.html' %}
+{% load static %}
+{% block Data%}
+
+<div class="usertable1">
+    <table class="usertable">
+        <tr class="userrow">
+            <th>ID.</th>
+            <th>NAME</th>
+            <th>EMAIL ID</th>
+            <th>BALANCE</th>
+        </tr>
+        {% for i in allusers %}
+        <tr class="usercolumn">
+            <td>{{ i.id }}</td>
+            <td>{{ i.Name }}</td>
+            <td>{{ i.Email}}</td>
+            <td>{{ i.Balance }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% endblock %}

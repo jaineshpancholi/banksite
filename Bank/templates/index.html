@@ -1,0 +1,29 @@
+{% extends 'Nav_Footer.html' %}
+{% load static %}
+{% block Data %}
+<header class="header">
+
+</header>
+<section>
+    <div class="allboxes">
+        <div class="box">
+            <div class="img">
+                <img src="{% static 'icon.svg' %}" height="190px" width="120px">
+            </div>
+            <div>
+                <a href="{% url 'mtransaction' %}"><button class="btn">MAKE TRANSACTION</button></a>
+            </div>
+
+        </div>
+        <div class="box">
+            <div class="img">
+                <img src="{% static 'history.svg' %}" height="190px" width="120px">
+            </div>
+            <div>
+                <a href="{% url 'history' %}"><button class="btn">TRANSACTION HISTORY</button></a>
+            </div>
+
+        </div>
+    </div>
+</section>
+{% endblock %}

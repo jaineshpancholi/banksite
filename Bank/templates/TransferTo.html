@@ -1,0 +1,67 @@
+{% extends 'Nav_Footer.html' %}
+{% load static %}
+{% block Data %}
+
+<section class="page">
+    <div class="senderform">
+        <h3 class="about">SEND FROM:</h3>
+        <div class="sendertext">
+            {% if error %}
+            <script>
+                alert("Insufficiant Balance")
+            </script>
+            {% endif %}
+            <form action="" method="post">
+                {% csrf_token %}
+                SENDER ID:<br>
+                <input type="number" name="senderid" value="{{ users.id }}" class="input" disabled><br><br>
+
+                SENDER NAME:<br>
+                <input type="text" id="name" name="name" value="{{ users.Name }}" class="input" disabled><br><br>
+
+                SENDER EMAIL:<br>
+                <input type="email" name="email" value="{{ users.Email}}" class="input" disabled><br><br>
+
+                SENDER AVAILABLE BALANCE:<br>
+                <input type="number" name="balance" value="{{ users.Balance }}" class="input" disabled><br><br>
+            </form>
+        </div>
+    </div>
+    <div class="receiverform">
+        <h3 class="about">SEND TO:</h3>
+        <div class="sendertext">
+            <form action="" method="post">
+                {% csrf_token %}
+                RECEIVER NAME:<br>
+                <div>
+                    <select required class="selectinput" name="uid">
+                        <option value="">Select Name</option>
+                        {% for i in allusers %}
+
+                        <option value="{{ i.id }}">{{i.Name}}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <!-- <input type="text" id="receivername" class="input"><br><br> -->
+
+                AMOUNT:<br>
+                <input type="number" required value="" oninput="fun()" id="amount" name="amount" class="input">
+                <div class="trbtn">
+                    <input type="submit" value="Transfer">
+                    <!-- <button id="transfer">Transfer</button> -->
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+    function fun(event) {
+        var amount = document.getElementById("amount").value
+        if (amount <= 0) {
+            document.getElementById("amount").value = " "
+        }
+        console.log(amount)
+    }
+</script>
+
+{% endblock %}

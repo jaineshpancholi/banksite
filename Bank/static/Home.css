@@ -1,0 +1,243 @@
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+
+.header{
+    background-image: url("../static/bankpic.jpg");
+    box-shadow: 0 4px 8px 0 gray;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-blend-mode: multiply;
+    height: 250px;
+    margin: 0px 40px;
+}
+
+li{
+    list-style: none;
+}
+
+body{
+    margin:0;
+    
+}
+
+.navbar{
+    overflow:hidden;
+    background-color: #707B7C;
+    margin-top: 10px;
+    /*text-align: right;*/
+    /*font-size: 20px;*/
+    margin-bottom: 10px;
+    /*display: flex;
+    flex-wrap: wrap;*/
+
+    
+}
+
+.navright{
+    float: right;
+}
+
+.navbar a{
+    float: left;
+    display: inline-block;
+    color: #76D7C4 ;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+    
+}
+
+.atitle{
+    font-style: italic;
+    display: inline-block;
+    color: #76D7C4 ;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 22px;
+}
+
+.navbar a:hover{
+    font-size: 22px;
+    background-color: #E8F8F5;
+}
+
+.allboxes{
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box{
+    margin-top: 40px;
+    /* margin-left: 90px; */
+    width: 250px;
+    height: 250px;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+     justify-content: center;
+    border: 2px solid silver;
+    box-shadow: 4px 4px gray;
+}
+
+.btn{
+    height: 40px;
+    width: 70%;
+    justify-content: center;
+    background-color:#229954;
+    color: white;
+    cursor: pointer;
+    margin-left: 38px;
+    align-items: center;  
+    text-decoration: none;
+    
+}
+.btn:hover{
+    background-color: #196F3D;
+}
+
+.img{
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    
+}
+
+.name{
+    font-size: 30px;
+}
+
+.table{
+    text-align: center; 
+    justify-content: center;
+    display: flex;   
+    
+}
+
+.table1{
+    width:80%;
+    border-color: gray;
+    border-style: outset;
+}
+
+.row{
+    background-color:black;
+    color: #CCD1D1;
+}
+
+.row2 td{
+    border-bottom: 1px solid gray;
+}
+
+.row2{
+    font-size: 18px;
+    color: #99A3A4;
+}
+
+.tbtn{
+    height: 30px;
+    width: 90px;
+    cursor: pointer;
+    background-color: #5D6D7E;
+    color: white;
+}
+
+.usertable{
+    border: 2px solid gray;
+}
+
+.usertable tr{
+    border-bottom: 3px solid;
+}
+
+.userrow{
+    background-color: black;
+    color: #CCD1D1;
+}
+
+.usercolumn td{
+    border-bottom: 1px solid gray;
+}
+
+.usercolumn{
+    font-size: 18px;
+    color: #99A3A4;
+    
+}
+
+.usertable1{
+    text-align: center; 
+    justify-content: center;
+    display: flex; 
+}
+
+.usertable{
+    width:80%;
+    border-color: gray;
+    border-style: outset;
+}
+
+.page{
+    padding-top: 60px;
+    justify-content: space-around;
+    display: flex;
+}
+
+.senderform{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: #99A3A4 ;
+}
+
+.receiverform{
+    border: 1px solid black;
+    border-radius: 10px;
+    height: 400px;
+    width: 400px;
+    background-color: #BFC9CA;
+}
+
+.sendertext{
+    padding-left: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+}
+
+.about{
+    padding-left: 5px;
+    font-size: 22px;
+}
+
+.input{
+    width: 94%;
+    height: 20px;
+    font-size: 18px;
+    
+}
+
+.trbtn input{
+    height: 40px;
+    width: 100px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 2px;
+    margin-left: 140px;
+    background-color: #5D6D7E;
+    color: white;
+    
+}
+
+.selectinput{
+    width: 96%;
+    height: 30px;
+    margin-bottom: 12px;
+    font-size: 15px;
+}

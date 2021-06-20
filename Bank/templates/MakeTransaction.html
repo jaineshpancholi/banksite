@@ -1,0 +1,28 @@
+{% extends 'Nav_Footer.html' %}
+{% load static %}
+{% block Data%}
+
+<div class="table">
+    <table class="table1">
+        <tr class="row">
+            <th>ID.</th>
+            <th>NAME</th>
+            <th>EMAIL ID</th>
+            <th>BALANCE</th>
+            <th>TO</th>
+        </tr>
+        {% for i in users %}
+        <tr class="row2">
+            <td>{{ i.id }}</td>
+            <td>{{i.Name}}</td>
+            <td>{{i.Email}}</td>
+            <td>{{i.Balance}}</td>
+            <td><a href="{% url 'transfer' i.id %}"><button class="tbtn">Transaction</button></a></td>
+        </tr>
+        {% endfor %}
+
+    </table>
+
+</div>
+
+{% endblock %}
